@@ -5,28 +5,31 @@
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 </head>
 <body>
 	<header>
-		<div class="col-xs-3">
-	    <%= link_to root_path, :class => 'logo' do %>
-	    <div class="circle">
-	      <br />
-	    	  Quotes
-	      <br />
-	        you dont
-	      <br />
-	        care about
-	    </div>	
-			<% end %>
-		</div>
-		<div class="col-xs-6 slogan">
-			Splurting out unsolicited advice about everything since now
-		</div>
-		<div class="col-xs-3 links">
-			<%= link_to 'Contribute', new_quote_path %>
-			<%= link_to 'About', about_path %>
-		</div>
+		<div calss="row">
+			<div class="col-xs-6 col-md-3">
+		    <%= link_to root_path, :class => 'logo' do %>
+		    <div class="circle">
+		      <br />
+		    	  Quotes
+		      <br />
+		        you dont
+		      <br />
+		        care about
+		    </div>	
+				<% end %>
+			</div>
+			<div class="col-xs-6 col-md-6 slogan hidden-xs">
+				Splurting out unsolicited advice about everything since now
+			</div>
+			<div class="col-xs-6 col-md-3 links">
+				<%= link_to 'Contribute', new_quote_path %>
+				<%= link_to 'About', about_path %>
+			</div>
+	</div>
 	</header>
 	<hr />
 
