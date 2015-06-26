@@ -7,30 +7,49 @@
     font-weight:bold;
     font-style: italic;
     position: relative;
-    border-radius: 100%;
     background: #f84342;
     border: 1px solid #F7F7F7;
-    width: 80px;
-    height: 80px;
     margin: 10px 10px;
+    margin-left: 15px;
     text-align: center;
     color: #FFF;
-    font-size: 10px;
+    font-size: 12px;
     line-height: 16px;
     cursor: pointer;
-    transform:rotate(11deg);
-    -ms-transform:rotate(11deg); /* IE 9 */
-    -webkit-transform:rotate(11deg); /* Opera, Chrome, and Safari */
+
+
+    width: 120px;
+    height: 80px;
+    background: red;
+    position: relative;
+    -moz-border-radius:    10px;
+    -webkit-border-radius: 10px;
+    border-radius:         10px;
+}
+
+.circle:before {
+   content:"";
+   position: absolute;
+   right: 100%;
+   top: 26px;
+   width: 0;
+   height: 0;
+   border-top: 13px solid transparent;
+   border-right: 26px solid red;
+   border-bottom: 13px solid transparent;
+   margin-left: 15px;
 }
 
 .slogan {
   font-family: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
   font-style: italic;
   padding-top: 26px;
+  text-align: center;
 }
 
 .links {
     padding-top: 26px;
+    text-align: right;
 }
 
 .links a {
@@ -39,6 +58,8 @@
     border-bottom: 1px solid #dfdfdf;
     font-family: 'exothin', sans-serif;
     font-weight: bold;
+
+
 }
 
 header {
